@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14/dist/vue.js"></script>
+
+</head>
+<body>
+    <div class="container" style="text-align: center;">
+    <div id="score">
+            <a v-on:click="Like += 10,counter +=10"><img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f44d.png" alt="Like" width="70px" height="70px"></a>
+            <a v-on:click="Love += 20,counter +=20"><img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f60d.png" alt="Love" width="70px" height="70px"></a>
+            <a v-on:click="Laugh += 25,counter +=25"><img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f606.png" alt="haha" width="70px" height="70px"></a>  
+            <a v-on:click="Wow += 30,counter +=30"><img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f62e.png" alt ="wow" width="70px" height="70px"></a>
+            <a v-on:click="Sad -= 15,counter -=15"><img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f622.png" alt="sad" width=70 height=70></a>
+            <a v-on:click="Angry -= 50,counter -=50"><img src="https://pic.sopili.net/pub/emoji/twitter/2/72x72/1f620.png" alt="angry" width=70 height=70></a>
+
+         
+        <p>score {{ counter }} .</p>
+        <hr>
+        <p>Like : {{Like}}</p>
+        <p>Love : {{Love}}</p>
+        <p>Laugh : {{Laugh}}</p>
+        <p>Wow : {{Wow}}</p>
+        <p>Sad : {{Sad}}</p>
+        <p>Angry : {{Angry}}</p>
+        </div>
+      </div>
+
+    
+
+
+
+
+</body>
+</html>
+
+<script>
+    var example1 = new Vue({
+  el: '#score',
+  data: {
+   
+    Like: 0,
+    Love:0,
+    Laugh:0,
+    Wow:0,
+    Sad:0,
+    Angry:0,
+    counter:0
+  },
+ 
+
+})
+</script>
